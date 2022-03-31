@@ -1,0 +1,142 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display:block;
+    clear: both;
+}
+
+html {
+    min-width: 800px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    background-color: #fff;
+}
+
+.header, .content-wrapper, .container, .content, .footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    height: 80px;
+    background: #6CAEDD;
+    color: #fff;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.footer {
+    height: 40px;
+    /*background: #364850;*/
+    background: #6CAEDD;
+    color: #fff;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    justify-content: right;
+}
+.footer p{
+    margin: auto 0;
+    text-align: right;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    flex-direction: column;
+    height: 100%;
+    min-width: 800px;
+    max-width: 1400px;
+    border: solid 1px #969696;
+}
+
+.container {
+    flex-wrap: nowrap;
+    flex: 1 0 auto;
+}
+
+.content {
+    width: 100%;
+    flex-direction: column;
+    flex: 1 1 auto;
+    order: 0;
+    order: 2;
+}
+
+.sidebar {
+    background: #fff3f1;
+    /*background: #FFD399;*/
+    flex: 0 0 auto;
+    width: 400px;
+    order: 1;
+    order: 0;
+}
+
+
+
+
+
+
+.header,
+.footer,
+.content,
+.sidebar{
+    padding: 10px;
+}
+
+
+.header {
+    justify-content: space-between;
+}
+header .authorization{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.header h1, .header .authorization{
+    padding: 0;
+    margin: auto 0;
+}
+.hide{
+    display: none !important;
+}
+.show{
+    display: block !important;
+}
+
+#invalid_feedback{
+    width: 100%;
+    min-height: 100px;
+    position: absolute;
+    top: 0;
+    background: #ffbede;
+    border: magenta 2px solid;
+    opacity: 0.9;
+    display: none;
+    padding: 20px 10px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+    z-index: 1002;
+}

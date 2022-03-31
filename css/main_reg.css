@@ -1,0 +1,65 @@
+.header {
+    background: #6CAEDD;
+}
+.footer {
+    background: #6CAEDD;
+}
+
+aside.sidebar{
+    width:500px;
+}
+
+.description{
+    display: inline-block;
+    float: right;
+    border: #969696 solid 1px;
+    margin-left: 10px;
+    margin-bottom: -5px;
+    padding: 1px 3px;
+    height: 22px;
+    width: 280px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    cursor:default ;
+
+    height: 16px;
+    font-size: 10px;
+}
+
+
+div.tree li{
+    list-style-type: none;
+}
+div.tree ul{
+    margin-left: 0px; /* Отступ слева в браузере IE и Opera */
+    padding-left: 20px; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+
+main.content form{
+    display: inline-block;
+    margin: 0 auto;
+}
+main.content form div{
+    text-align: right;
+    padding-top: 5px;
+}
+main.content>div{
+    text-align: center;
+    padding-top: 15px;
+}
+main.content form select,
+main.content form input,
+main.content form textarea{
+    width: 350px;
+}
+main.content>div>select{
+    margin-bottom: 25px;
+    width: 250px;
+}
+main.content select[name=treeitem]{
+     margin-bottom: 20px;
+ }
